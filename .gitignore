@@ -87,3 +87,9 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift
 
+Pods/
+*.xcframework
+Pods/
+*.xcframework
+*.xcworkspace
+DerivedData/
