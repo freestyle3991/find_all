@@ -30,7 +30,7 @@ Find_All — bu iOS platformasi uchun ishlab chiqilgan xarita asosidagi mobil il
 
 | Home Screen | Search Modal | Bottom Sheet |
 |-------------|--------------|--------------|
-| ![home](screenshots/home.png) | ![search](screenshots/search.png) | ![sheet](screenshots/bottomsheet.png) |
+| ![home](screenshots/home.jpg) | ![search](screenshots/search.jpg) | ![sheet](screenshots/bottomsheet.jpg) |
 
 ## 🚀 Ishga tushurish
 
